@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <section class="section">
+    <div class="container">
+      <div class="recipient-data-box">
+        <form action="" id="form" class="form-user-data">
+          <div class="form-user-data__title">
+            <h1 class="title">Данные получателя</h1>
+          </div>
+          <div class="form-user-data__dob">
+            <input type="text" placeholder="Фамилия" class="input-main">
+            <input type="text" placeholder="Имя" class="input-main">
+            <input type="text" placeholder="Отчество" class="input-main">
+          </div>
+          <div class="form-user-data__item">
+            <input type="number" placeholder="Номер телефона" class="input-main input-main_phone " id="user-phone">
+            <label for="user-phone">По этому номеру телефона мы с вяжемся с вами для подтверждения заказа</label>
+          </div>
+          <div class="form-user-data__item">
+            <input type="email" class="input-main input-main_email" placeholder="E-mail">
+            <label>На эту почту вам придет письмо с составом заказа, а так же трэк-номер для его отслеживания
+            </label>
+          </div>
+          <label class="custom-checkbox">
+            <input class="hidden-checkbox" type="checkbox">
+            <div class="checkbox"></div>
+            Подписаться на рассылку новинок и акций
+          </label>
+          <div class="form-user-data__title">
+            <h1 class="title">Способ оплаты</h1>
+          </div>
+          <div class="form-user-data__item">
+            <label class="custom-radio">
+              <input class="hidden-radio" type="radio" name="payment-method" value="offline">
+              <div class="radio"></div>
+              Оплата при получении наличными или картой
+            </label>
+            <label class="custom-radio">
+              <input class="hidden-radio" type="radio" name="payment-method" value="online">
+              <div class="radio"></div>
+              Оплата банковской картой онлайн
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

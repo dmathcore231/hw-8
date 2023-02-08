@@ -1,0 +1,129 @@
+@import url(./normalize.css);
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #424242;
+  font-size: 16px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 75%;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+fieldset {
+  border: none;
+}
+
+.form-user-data__dob {
+  display: flex;
+  gap: 13px;
+}
+
+.form-user-data {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.form-user-data__item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-main {
+  border: 1px solid #BDBDBD;
+  border-radius: 83px;
+  padding: 15px 10px 15px 10px;
+}
+
+.input-main::placeholder {
+  color: #BDBDBD;
+  font-size: 14px;
+  line-height: 34px;
+}
+
+.title {
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.input-main_phone {
+  max-width: 220px;
+}
+
+.input-main_email {
+  max-width: 456px;
+}
+
+
+/*--- custom-checkbox --*/
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.custom-checkbox input {
+  -webkit-appearance: none;
+  position: absolute;
+}
+
+.checkbox {
+  width: 30px;
+  height: 30px;
+  background: url(/images/cb-inactive.svg);
+}
+
+.custom-checkbox input:checked~.checkbox {
+  display: block;
+}
+
+.custom-checkbox input:checked~.checkbox {
+  background: url(/images/cb-active.svg) no-repeat center;
+}
+
+/*--- custom-radio --*/
+
+.custom-radio {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.custom-radio input {
+  -webkit-appearance: none;
+  position: absolute;
+}
+
+.radio {
+  width: 31px;
+  height: 31px;
+  background: url(/images/radio-inactive.svg);
+}
+
+.custom-radio input:checked~.radio {
+  display: block;
+}
+
+.custom-radio input:checked~.radio {
+  background: url(/images/radio-active.svg) no-repeat center;
+}
