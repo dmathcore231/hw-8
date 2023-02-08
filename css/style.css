@@ -30,9 +30,16 @@ fieldset {
   border: none;
 }
 
-.form-user-data__dob {
+.form-user-data__item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-user-data__item_row {
   display: flex;
   gap: 13px;
+  flex-direction: row;
 }
 
 .form-user-data {
@@ -40,12 +47,6 @@ fieldset {
   flex-direction: column;
   gap: 25px;
   align-items: flex-start;
-}
-
-.form-user-data__item {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
 }
 
 .input-main {
